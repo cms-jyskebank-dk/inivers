@@ -1,0 +1,6 @@
+@InvestPlatform.Api_HostAddress = http://localhost:5031
+
+GET {{InvestPlatform.Api_HostAddress}}/customer/
+Accept: application/json
+
+###

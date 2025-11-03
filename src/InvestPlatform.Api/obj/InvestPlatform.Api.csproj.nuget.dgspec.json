@@ -1,0 +1,306 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\JB6352\\OneDrive - Jyske Bank\\Dokumenter\\Source\\Inivers\\src\\InvestPlatform.Api\\InvestPlatform.Api.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\JB6352\\OneDrive - Jyske Bank\\Dokumenter\\Source\\Inivers\\src\\InvestPlatform.Api\\InvestPlatform.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\JB6352\\OneDrive - Jyske Bank\\Dokumenter\\Source\\Inivers\\src\\InvestPlatform.Api\\InvestPlatform.Api.csproj",
+        "projectName": "InvestPlatform.Api",
+        "projectPath": "C:\\Users\\JB6352\\OneDrive - Jyske Bank\\Dokumenter\\Source\\Inivers\\src\\InvestPlatform.Api\\InvestPlatform.Api.csproj",
+        "packagesPath": "C:\\Users\\JB6352\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\JB6352\\OneDrive - Jyske Bank\\Dokumenter\\Source\\Inivers\\src\\InvestPlatform.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\JB6352\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\JB6352\\OneDrive - Jyske Bank\\Dokumenter\\Source\\Inivers\\src\\InvestPlatform.Application\\InvestPlatform.Application.csproj": {
+                "projectPath": "C:\\Users\\JB6352\\OneDrive - Jyske Bank\\Dokumenter\\Source\\Inivers\\src\\InvestPlatform.Application\\InvestPlatform.Application.csproj"
+              },
+              "C:\\Users\\JB6352\\OneDrive - Jyske Bank\\Dokumenter\\Source\\Inivers\\src\\InvestPlatform.Domain\\InvestPlatform.Domain.csproj": {
+                "projectPath": "C:\\Users\\JB6352\\OneDrive - Jyske Bank\\Dokumenter\\Source\\Inivers\\src\\InvestPlatform.Domain\\InvestPlatform.Domain.csproj"
+              },
+              "C:\\Users\\JB6352\\OneDrive - Jyske Bank\\Dokumenter\\Source\\Inivers\\src\\InvestPlatform.Infrastructure\\InvestPlatform.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\JB6352\\OneDrive - Jyske Bank\\Dokumenter\\Source\\Inivers\\src\\InvestPlatform.Infrastructure\\InvestPlatform.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.10, )"
+            },
+            "NSwag.AspNetCore": {
+              "target": "Package",
+              "version": "[14.6.1, )"
+            },
+            "NSwag.Core": {
+              "target": "Package",
+              "version": "[14.6.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\JB6352\\OneDrive - Jyske Bank\\Dokumenter\\Source\\Inivers\\src\\InvestPlatform.Application\\InvestPlatform.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\JB6352\\OneDrive - Jyske Bank\\Dokumenter\\Source\\Inivers\\src\\InvestPlatform.Application\\InvestPlatform.Application.csproj",
+        "projectName": "InvestPlatform.Application",
+        "projectPath": "C:\\Users\\JB6352\\OneDrive - Jyske Bank\\Dokumenter\\Source\\Inivers\\src\\InvestPlatform.Application\\InvestPlatform.Application.csproj",
+        "packagesPath": "C:\\Users\\JB6352\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\JB6352\\OneDrive - Jyske Bank\\Dokumenter\\Source\\Inivers\\src\\InvestPlatform.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\JB6352\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\JB6352\\OneDrive - Jyske Bank\\Dokumenter\\Source\\Inivers\\src\\InvestPlatform.Domain\\InvestPlatform.Domain.csproj": {
+                "projectPath": "C:\\Users\\JB6352\\OneDrive - Jyske Bank\\Dokumenter\\Source\\Inivers\\src\\InvestPlatform.Domain\\InvestPlatform.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\JB6352\\OneDrive - Jyske Bank\\Dokumenter\\Source\\Inivers\\src\\InvestPlatform.Domain\\InvestPlatform.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\JB6352\\OneDrive - Jyske Bank\\Dokumenter\\Source\\Inivers\\src\\InvestPlatform.Domain\\InvestPlatform.Domain.csproj",
+        "projectName": "InvestPlatform.Domain",
+        "projectPath": "C:\\Users\\JB6352\\OneDrive - Jyske Bank\\Dokumenter\\Source\\Inivers\\src\\InvestPlatform.Domain\\InvestPlatform.Domain.csproj",
+        "packagesPath": "C:\\Users\\JB6352\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\JB6352\\OneDrive - Jyske Bank\\Dokumenter\\Source\\Inivers\\src\\InvestPlatform.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\JB6352\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\JB6352\\OneDrive - Jyske Bank\\Dokumenter\\Source\\Inivers\\src\\InvestPlatform.Infrastructure\\InvestPlatform.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\JB6352\\OneDrive - Jyske Bank\\Dokumenter\\Source\\Inivers\\src\\InvestPlatform.Infrastructure\\InvestPlatform.Infrastructure.csproj",
+        "projectName": "InvestPlatform.Infrastructure",
+        "projectPath": "C:\\Users\\JB6352\\OneDrive - Jyske Bank\\Dokumenter\\Source\\Inivers\\src\\InvestPlatform.Infrastructure\\InvestPlatform.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\JB6352\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\JB6352\\OneDrive - Jyske Bank\\Dokumenter\\Source\\Inivers\\src\\InvestPlatform.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\JB6352\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\JB6352\\OneDrive - Jyske Bank\\Dokumenter\\Source\\Inivers\\src\\InvestPlatform.Application\\InvestPlatform.Application.csproj": {
+                "projectPath": "C:\\Users\\JB6352\\OneDrive - Jyske Bank\\Dokumenter\\Source\\Inivers\\src\\InvestPlatform.Application\\InvestPlatform.Application.csproj"
+              },
+              "C:\\Users\\JB6352\\OneDrive - Jyske Bank\\Dokumenter\\Source\\Inivers\\src\\InvestPlatform.Domain\\InvestPlatform.Domain.csproj": {
+                "projectPath": "C:\\Users\\JB6352\\OneDrive - Jyske Bank\\Dokumenter\\Source\\Inivers\\src\\InvestPlatform.Domain\\InvestPlatform.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

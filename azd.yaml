@@ -1,0 +1,9 @@
+name: investplatform
+services:
+  api:
+    project: src/InvestPlatform.Api
+    language: dotnet
+    path: src/InvestPlatform.Api
+    docker:
+      dockerfile: src/InvestPlatform.Api/Dockerfile
+      context: .
