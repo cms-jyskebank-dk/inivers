@@ -9,3 +9,4 @@ C:\Users\JB6352\OneDrive - Jyske Bank\Dokumenter\Source\Inivers\src\InvestPlatfo
 C:\Users\JB6352\OneDrive - Jyske Bank\Dokumenter\Source\Inivers\src\InvestPlatform.Domain\obj\Debug\net9.0\refint\InvestPlatform.Domain.dll
 C:\Users\JB6352\OneDrive - Jyske Bank\Dokumenter\Source\Inivers\src\InvestPlatform.Domain\obj\Debug\net9.0\InvestPlatform.Domain.pdb
 C:\Users\JB6352\OneDrive - Jyske Bank\Dokumenter\Source\Inivers\src\InvestPlatform.Domain\obj\Debug\net9.0\ref\InvestPlatform.Domain.dll
+C:\Users\JB6352\OneDrive - Jyske Bank\Dokumenter\Source\Inivers\src\InvestPlatform.Domain\obj\Debug\net9.0\InvestPlatform.Domain.sourcelink.json

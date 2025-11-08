@@ -4,34 +4,32 @@ using InvestPlatform.Application.RiskProfile;
 using InvestPlatform.Infrastructure.RiskProfile;
 using InvestPlatform.Application.Customer;
 using InvestPlatform.Infrastructure.Customer;
+using InvestPlatform.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddOpenApi();
-builder.Services.AddOpenApiDocument();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSingleton<ICustomerRepository, InMemoryCustomerRepository>();
+
+// Add Entity Framework and SQL Server
+builder.Services.AddDbContext<InvestPlatformDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection") 
+        ?? "Server=(localdb)\\mssqllocaldb;Database=InvestPlatformDb;Trusted_Connection=true;MultipleActiveResultSets=true"));
+
+builder.Services.AddScoped<ICustomerRepository, EfCustomerRepository>();
 builder.Services.AddSingleton<IRiskProfileRepository, InMemoryRiskProfileRepository>();
 builder.Services.AddTransient<RegisterCustomerUseCase>();
 builder.Services.AddTransient<AssessRiskProfileUseCase>();
+
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
+// Ensure database is created
+using (var scope = app.Services.CreateScope())
 {
-    // Add OpenAPI 3.0 document serving middleware
-    // Available at: http://localhost:<port>/swagger/v1/swagger.json
-    app.UseOpenApi();
-
-    // Add web UIs to interact with the document
-    // Available at: http://localhost:<port>/swagger
-    app.UseSwaggerUi(); // UseSwaggerUI is called only in Development.
-
-    // Add ReDoc UI to interact with the document
-    // Available at: http://localhost:<port>/redoc
-    app.UseReDoc(options =>
-    {
-        options.Path = "/redoc";
-    });
+    var context = scope.ServiceProvider.GetRequiredService<InvestPlatformDbContext>();
+    context.Database.EnsureCreated();
 }
+
+
 
 
 // Customer endpoints
@@ -49,10 +47,8 @@ app.MapGet("/customer/{id:guid}", async (ICustomerRepository repo, Guid id) =>
 
 app.MapGet("/customer", async (ICustomerRepository repo) =>
 {
-    // InMemory: Return all customers
-    if (repo is InMemoryCustomerRepository memRepo)
-        return Results.Ok(await memRepo.GetAllAsync());
-    return Results.StatusCode(501);
+    var customers = await repo.GetAllAsync();
+    return Results.Ok(customers);
 });
 
 app.MapPut("/customer/{id:guid}", async (ICustomerRepository repo, Guid id, CustomerDto dto) =>
@@ -72,13 +68,8 @@ app.MapPut("/customer/{id:guid}", async (ICustomerRepository repo, Guid id, Cust
 
 app.MapDelete("/customer/{id:guid}", async (ICustomerRepository repo, Guid id) =>
 {
-    // InMemory: Remove customer
-    if (repo is InMemoryCustomerRepository memRepo)
-    {
-        var result = await memRepo.RemoveAsync(id);
-        return result ? Results.NoContent() : Results.NotFound();
-    }
-    return Results.StatusCode(501);
+    var result = await repo.RemoveAsync(id);
+    return result ? Results.NoContent() : Results.NotFound();
 });
 
 
